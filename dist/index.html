@@ -1,0 +1,59 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Drawing App JavaScript</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script defer="defer" src="bundle.js"></script>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="tools-board">
+        <div class="row">
+          <label class="title">Shapes</label>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <img src="f41bba5e4ca4ded4e03f.svg" id="rectangle-img" alt="" /> Rectangle
+            </li>
+            <li class="option tool" id="circle">
+              <img src="7cb39a9a1213b227711a.svg" id="circle-img" alt="" /> Circle
+            </li>
+            <li class="option tool" id="triangle">
+              <img src="0a9a8ba15c9d3328d7f3.svg" id="triangle-img" alt="" /> Triangle
+            </li>
+            <li class="option check">
+              <input type="checkbox" id="fill-color" /> <label for="fill-color">Fill color</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <label class="title">Options</label>
+          <ul class="options">
+            <li class="option active tool" id="brush">
+              <img src="4d01c460f6ac057b8187.svg" id="brush-img" alt="" /> Brush
+            </li>
+            <li class="option tool" id="eraser">
+              <img src="bab502fe7e62bfef2725.svg" id="eraser-img" alt="" /> Eraser
+            </li>
+            <li class="option"><input type="range" id="size-slider" min="1" max="30" value="5" /></li>
+          </ul>
+        </div>
+        <div class="row colors">
+          <label class="title">Colors</label>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"><input type="color" id="colored-picker" value="#4A98F7" /></li>
+          </ul>
+        </div>
+        <div class="row buttons"><button class="clear-canvas">Clear Canvas</button></div>
+      </section>
+      <section class="drawing-board"><canvas></canvas></section>
+    </div>
+  </body>
+</html>
